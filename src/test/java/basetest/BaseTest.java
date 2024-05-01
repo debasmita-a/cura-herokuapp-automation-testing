@@ -8,7 +8,10 @@ import org.testng.annotations.BeforeTest;
 
 import configurationReader.ConfigurationReader;
 import driverfactory.DriverManager;
+import pages.AppointmentConfirmationPage;
+import pages.AppointmentPage;
 import pages.LandingPage;
+import pages.LoginPage;
 
 public class BaseTest {
 
@@ -17,6 +20,9 @@ public class BaseTest {
 	protected ConfigurationReader configReader;
 	protected Properties properties;
 	protected LandingPage landingPage;
+	protected LoginPage loginPage;
+	protected AppointmentPage appointmentPage;
+	protected AppointmentConfirmationPage appointmentConfirmPage;
 
 	@BeforeTest
 	public void setup() {

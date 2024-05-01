@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,7 +21,8 @@
      -->
   </head>
 
-  <body>    <div class="top-banner-root">
+  <body>
+    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
@@ -38,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Regression_Suite" class="navigator-link">
+              <span class="suite-name border-passed">Regression Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\91956\AppData\Local\Temp\testng-eclipse--436898008\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Regression_Suite" class="navigator-link ">
+                    <span>C:\Users\in8DebAd\eclipse-workspace\cura-herokuapp-automation-testing\src\test\resources\testrunners\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-Regression_Suite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Regression_Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Regression_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Regression_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Regression_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Regression_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +93,61 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">9 methods,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods passed suite-Regression_Suite"> (hide)</a> <!-- hide-methods passed suite-Regression_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods passed suite-Regression_Suite"> (show)</a> <!-- show-methods passed suite-Regression_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Regression_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.RegistrationPageTest" class="method navigator-link" hash-for-method="doResgitrationTest">doResgitrationTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.AppointmentConfirmationPageTest" class="method navigator-link" hash-for-method="getConfirmationMsg(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)">getConfirmationMsg(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.AppointmentConfirmationPageTest" class="method navigator-link" hash-for-method="getConfirmationMsg(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)">getConfirmationMsg(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.AppointmentConfirmationPageTest" class="method navigator-link" hash-for-method="getFacilityValueTest(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)">getFacilityValueTest(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.AppointmentConfirmationPageTest" class="method navigator-link" hash-for-method="getFacilityValueTest(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)">getFacilityValueTest(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.LoginPageTest" class="method navigator-link" hash-for-method="getPageUrlTest">getPageUrlTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.AppointmentPageTest" class="method navigator-link" hash-for-method="getPageUrlTest">getPageUrlTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.AppointmentConfirmationPageTest" class="method navigator-link" hash-for-method="getPageUrlTest(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)">getPageUrlTest(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.AppointmentConfirmationPageTest" class="method navigator-link" hash-for-method="getPageUrlTest(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)">getPageUrlTest(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="tests.LoginPageTest" class="method navigator-link" hash-for-method="loginTextExistsTest">loginTextExistsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Regression_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,129 +158,337 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Regression_Suite" class="panel Regression_Suite">
+          <div class="suite-Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.RegistrationPageTest</span>
+              <span class="class-name">tests.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="doResgitrationTest">
-                  </a> <!-- doResgitrationTest -->
-                  <span class="method-name">doResgitrationTest</span>
+                  <a name="getPageUrlTest">
+                  </a> <!-- getPageUrlTest -->
+                  <span class="method-name">getPageUrlTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTextExistsTest">
+                  </a> <!-- loginTextExistsTest -->
+                  <span class="method-name">loginTextExistsTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Regression_Suite-class-passed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AppointmentPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPageUrlTest">
+                  </a> <!-- getPageUrlTest -->
+                  <span class="method-name">getPageUrlTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AppointmentConfirmationPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getConfirmationMsg(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)">
+                  </a> <!-- getConfirmationMsg(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01) -->
+                  <span class="method-name">getConfirmationMsg</span>
+                  <span class="parameters">(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getConfirmationMsg(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)">
+                  </a> <!-- getConfirmationMsg(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02) -->
+                  <span class="method-name">getConfirmationMsg</span>
+                  <span class="parameters">(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getFacilityValueTest(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)">
+                  </a> <!-- getFacilityValueTest(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02) -->
+                  <span class="method-name">getFacilityValueTest</span>
+                  <span class="parameters">(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getFacilityValueTest(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)">
+                  </a> <!-- getFacilityValueTest(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01) -->
+                  <span class="method-name">getFacilityValueTest</span>
+                  <span class="parameters">(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPageUrlTest(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)">
+                  </a> <!-- getPageUrlTest(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01) -->
+                  <span class="method-name">getPageUrlTest</span>
+                  <span class="parameters">(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPageUrlTest(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)">
+                  </a> <!-- getPageUrlTest(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02) -->
+                  <span class="method-name">getPageUrlTest</span>
+                  <span class="parameters">(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
+        </div> <!-- panel Regression_Suite -->
+        <div panel-name="test-xml-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\91956\AppData\Local\Temp\testng-eclipse--436898008\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\in8DebAd\eclipse-workspace\cura-herokuapp-automation-testing\src\test\resources\testrunners\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;4&quot;&gt;
+  &lt;test thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;Login Page Test&quot; verbose=&quot;4&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.RegistrationPageTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;doResgitrationTest&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- tests.RegistrationPageTest --&gt;
+      &lt;class name=&quot;tests.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Login Page Test --&gt;
+  &lt;test thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;Appointment Page Test&quot; verbose=&quot;4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.AppointmentPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Appointment Page Test --&gt;
+  &lt;test thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;Appointment Confirmation Page Test&quot; verbose=&quot;4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.AppointmentConfirmationPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Appointment Confirmation Page Test --&gt;
+&lt;/suite&gt; &lt;!-- Regression Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Regression Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Login Page Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Appointment Page Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Appointment Confirmation Page Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Regression Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Regression Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Regression_Suite');
+function tableData_Regression_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'doResgitrationTest')
-data.setCell(0, 2, 'tests.RegistrationPageTest')
-data.setCell(0, 3, 1718);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'getConfirmationMsg')
+data.setCell(0, 2, 'tests.AppointmentConfirmationPageTest')
+data.setCell(0, 3, 1184);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getPageUrlTest')
+data.setCell(1, 2, 'tests.AppointmentConfirmationPageTest')
+data.setCell(1, 3, 1087);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getConfirmationMsg')
+data.setCell(2, 2, 'tests.AppointmentConfirmationPageTest')
+data.setCell(2, 3, 1080);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getFacilityValueTest')
+data.setCell(3, 2, 'tests.AppointmentConfirmationPageTest')
+data.setCell(3, 3, 1036);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getPageUrlTest')
+data.setCell(4, 2, 'tests.AppointmentConfirmationPageTest')
+data.setCell(4, 3, 945);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getFacilityValueTest')
+data.setCell(5, 2, 'tests.AppointmentConfirmationPageTest')
+data.setCell(5, 3, 902);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'getPageUrlTest')
+data.setCell(6, 2, 'tests.AppointmentPageTest')
+data.setCell(6, 3, 198);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginTextExistsTest')
+data.setCell(7, 2, 'tests.LoginPageTest')
+data.setCell(7, 3, 121);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'getPageUrlTest')
+data.setCell(8, 2, 'tests.LoginPageTest')
+data.setCell(8, 3, 28);
+window.suiteTableData['Regression_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <div id="times-div-Regression_Suite">
+              </div> <!-- times-div-Regression_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Regression Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.RegistrationPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AppointmentPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AppointmentConfirmationPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AppointmentPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup_registrationPage</span>
-                <span class="method-start">7007 ms</span>
+                <span class="method-name">appointmentPage_setup</span>
+                <span class="method-start">6711 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AppointmentConfirmationPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">appointmentConfirmPage_setup</span>
+                <span class="method-start">6711 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loginPage_setup</span>
+                <span class="method-start">7477 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">doResgitrationTest</span>
-                <span class="method-start">7574 ms</span>
+                <span class="method-name">getPageUrlTest</span>
+                <span class="method-start">7942 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTextExistsTest</span>
+                <span class="method-start">7974 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AppointmentPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getPageUrlTest</span>
+                <span class="method-start">8018 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AppointmentConfirmationPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getConfirmationMsg(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)</span>
+                <span class="method-start">8081 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">8098 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AppointmentPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">8218 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AppointmentConfirmationPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getConfirmationMsg(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)</span>
+                <span class="method-start">9266 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getFacilityValueTest(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)</span>
+                <span class="method-start">10349 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getFacilityValueTest(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)</span>
+                <span class="method-start">11386 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getPageUrlTest(Tokyo CURA Healthcare Center, true, Medicare, 06/06/2024, Test Appointment 01)</span>
+                <span class="method-start">12289 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getPageUrlTest(Hongkong CURA Healthcare Center, false, Medicaid, 18/07/2024, Test Appointment 02)</span>
+                <span class="method-start">13235 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">9305 ms</span>
+                <span class="method-start">14325 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

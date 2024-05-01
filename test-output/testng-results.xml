@@ -1,29 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-30T19:23:14 IST" name="Default suite" finished-at="2024-04-30T19:23:23 IST" duration-ms="9335">
+  <suite started-at="2024-05-01T21:29:40 IST" name="Regression Suite" finished-at="2024-05-01T21:29:55 IST" duration-ms="14341">
     <groups>
     </groups>
-    <test started-at="2024-04-30T19:23:14 IST" name="Default test" finished-at="2024-04-30T19:23:23 IST" duration-ms="9335">
-      <class name="tests.RegistrationPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationPageTest@23e84203]" started-at="2024-04-30T19:23:14 IST" name="setup" finished-at="2024-04-30T19:23:21 IST" duration-ms="6973" status="PASS">
+    <test started-at="2024-05-01T21:29:40 IST" name="Login Page Test" finished-at="2024-05-01T21:29:48 IST" duration-ms="8113">
+      <class name="tests.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginPageTest@1d9b7cce]" started-at="2024-05-01T21:29:40 IST" name="setup" finished-at="2024-05-01T21:29:48 IST" duration-ms="7477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup_registrationPage()[pri:0, instance:tests.RegistrationPageTest@23e84203]" started-at="2024-04-30T19:23:21 IST" name="setup_registrationPage" finished-at="2024-04-30T19:23:22 IST" duration-ms="550" status="PASS">
+        <test-method is-config="true" signature="loginPage_setup()[pri:0, instance:tests.LoginPageTest@1d9b7cce]" started-at="2024-05-01T21:29:48 IST" name="loginPage_setup" finished-at="2024-05-01T21:29:48 IST" duration-ms="448" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup_registrationPage -->
-        <test-method signature="doResgitrationTest()[pri:0, instance:tests.RegistrationPageTest@23e84203]" started-at="2024-04-30T19:23:22 IST" name="doResgitrationTest" finished-at="2024-04-30T19:23:23 IST" duration-ms="1718" status="PASS">
+        </test-method> <!-- loginPage_setup -->
+        <test-method signature="getPageUrlTest()[pri:0, instance:tests.LoginPageTest@1d9b7cce]" started-at="2024-05-01T21:29:48 IST" name="getPageUrlTest" finished-at="2024-05-01T21:29:48 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doResgitrationTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.RegistrationPageTest@23e84203]" started-at="2024-04-30T19:23:23 IST" name="teardown" finished-at="2024-04-30T19:23:23 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- getPageUrlTest -->
+        <test-method signature="loginTextExistsTest()[pri:0, instance:tests.LoginPageTest@1d9b7cce]" started-at="2024-05-01T21:29:48 IST" name="loginTextExistsTest" finished-at="2024-05-01T21:29:48 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTextExistsTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginPageTest@1d9b7cce]" started-at="2024-05-01T21:29:48 IST" name="teardown" finished-at="2024-05-01T21:29:48 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- tests.RegistrationPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- tests.LoginPageTest -->
+    </test> <!-- Login Page Test -->
+    <test started-at="2024-05-01T21:29:40 IST" name="Appointment Page Test" finished-at="2024-05-01T21:29:49 IST" duration-ms="8233">
+      <class name="tests.AppointmentPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AppointmentPageTest@564fabc8]" started-at="2024-05-01T21:29:40 IST" name="setup" finished-at="2024-05-01T21:29:47 IST" duration-ms="6706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="appointmentPage_setup()[pri:0, instance:tests.AppointmentPageTest@564fabc8]" started-at="2024-05-01T21:29:47 IST" name="appointmentPage_setup" finished-at="2024-05-01T21:29:48 IST" duration-ms="1305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appointmentPage_setup -->
+        <test-method signature="getPageUrlTest()[pri:0, instance:tests.AppointmentPageTest@564fabc8]" started-at="2024-05-01T21:29:48 IST" name="getPageUrlTest" finished-at="2024-05-01T21:29:49 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPageUrlTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AppointmentPageTest@564fabc8]" started-at="2024-05-01T21:29:49 IST" name="teardown" finished-at="2024-05-01T21:29:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.AppointmentPageTest -->
+    </test> <!-- Appointment Page Test -->
+    <test started-at="2024-05-01T21:29:40 IST" name="Appointment Confirmation Page Test" finished-at="2024-05-01T21:29:55 IST" duration-ms="14341">
+      <class name="tests.AppointmentConfirmationPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AppointmentConfirmationPageTest@49139829]" started-at="2024-05-01T21:29:40 IST" name="setup" finished-at="2024-05-01T21:29:47 IST" duration-ms="6691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="appointmentConfirmPage_setup()[pri:0, instance:tests.AppointmentConfirmationPageTest@49139829]" started-at="2024-05-01T21:29:47 IST" name="appointmentConfirmPage_setup" finished-at="2024-05-01T21:29:48 IST" duration-ms="1366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appointmentConfirmPage_setup -->
+        <test-method signature="getConfirmationMsg(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@49139829]" started-at="2024-05-01T21:29:48 IST" name="getConfirmationMsg" data-provider="appointmentDetails" finished-at="2024-05-01T21:29:50 IST" duration-ms="1184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tokyo CURA Healthcare Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Medicare]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[06/06/2024]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Appointment 01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getConfirmationMsg -->
+        <test-method signature="getConfirmationMsg(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@49139829]" started-at="2024-05-01T21:29:50 IST" name="getConfirmationMsg" data-provider="appointmentDetails" finished-at="2024-05-01T21:29:51 IST" duration-ms="1080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hongkong CURA Healthcare Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Medicaid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[18/07/2024]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Appointment 02]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getConfirmationMsg -->
+        <test-method signature="getFacilityValueTest(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@49139829]" started-at="2024-05-01T21:29:51 IST" name="getFacilityValueTest" data-provider="appointmentDetails" finished-at="2024-05-01T21:29:52 IST" duration-ms="1036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tokyo CURA Healthcare Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Medicare]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[06/06/2024]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Appointment 01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFacilityValueTest -->
+        <test-method signature="getFacilityValueTest(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@49139829]" started-at="2024-05-01T21:29:52 IST" name="getFacilityValueTest" data-provider="appointmentDetails" finished-at="2024-05-01T21:29:53 IST" duration-ms="902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hongkong CURA Healthcare Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Medicaid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[18/07/2024]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Appointment 02]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFacilityValueTest -->
+        <test-method signature="getPageUrlTest(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@49139829]" started-at="2024-05-01T21:29:53 IST" name="getPageUrlTest" data-provider="appointmentDetails" finished-at="2024-05-01T21:29:54 IST" duration-ms="945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tokyo CURA Healthcare Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Medicare]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[06/06/2024]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Appointment 01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPageUrlTest -->
+        <test-method signature="getPageUrlTest(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@49139829]" started-at="2024-05-01T21:29:54 IST" name="getPageUrlTest" data-provider="appointmentDetails" finished-at="2024-05-01T21:29:55 IST" duration-ms="1087" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hongkong CURA Healthcare Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Medicaid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[18/07/2024]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Appointment 02]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPageUrlTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AppointmentConfirmationPageTest@49139829]" started-at="2024-05-01T21:29:55 IST" name="teardown" finished-at="2024-05-01T21:29:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.AppointmentConfirmationPageTest -->
+    </test> <!-- Appointment Confirmation Page Test -->
+  </suite> <!-- Regression Suite -->
 </testng-results>

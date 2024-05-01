@@ -16,11 +16,13 @@ public class LandingPage {
 	}
 	
 	//private By locators:
+	
 	private By makeAppointmentBtn = By.id("btn-make-appointment");
 	private By menu = By.id("menu-toggle");
 	private By loginLink = By.linkText("Login");
 	
 	//public page actions
+	
 	public LoginPage doClickMakeAppointmentBtn() {
 		util.doClick(makeAppointmentBtn);
 		return new LoginPage(driver);
