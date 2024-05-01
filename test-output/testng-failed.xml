@@ -6,8 +6,8 @@
       <class name="tests.RegistrationPageTest">
         <methods>
           <include name="teardown"/>
-          <include name="registrationTest"/>
           <include name="setup"/>
+          <include name="doResgitrationTest"/>
         </methods>
       </class> <!-- tests.RegistrationPageTest -->
     </classes>

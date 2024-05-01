@@ -2,20 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-23T18:08:41 IST" name="Default suite" finished-at="2024-04-23T18:08:48 IST" duration-ms="7623">
+  <suite started-at="2024-04-30T19:23:14 IST" name="Default suite" finished-at="2024-04-30T19:23:23 IST" duration-ms="9335">
     <groups>
     </groups>
-    <test started-at="2024-04-23T18:08:41 IST" name="Default test" finished-at="2024-04-23T18:08:48 IST" duration-ms="7623">
+    <test started-at="2024-04-30T19:23:14 IST" name="Default test" finished-at="2024-04-30T19:23:23 IST" duration-ms="9335">
       <class name="tests.RegistrationPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationPageTest@6d60fe40]" started-at="2024-04-23T18:08:41 IST" name="setup" finished-at="2024-04-23T18:08:48 IST" duration-ms="7094" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationPageTest@23e84203]" started-at="2024-04-30T19:23:14 IST" name="setup" finished-at="2024-04-30T19:23:21 IST" duration-ms="6973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="registrationTest()[pri:0, instance:tests.RegistrationPageTest@6d60fe40]" started-at="2024-04-23T18:08:48 IST" name="registrationTest" finished-at="2024-04-23T18:08:48 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="setup_registrationPage()[pri:0, instance:tests.RegistrationPageTest@23e84203]" started-at="2024-04-30T19:23:21 IST" name="setup_registrationPage" finished-at="2024-04-30T19:23:22 IST" duration-ms="550" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registrationTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.RegistrationPageTest@6d60fe40]" started-at="2024-04-23T18:08:48 IST" name="teardown" finished-at="2024-04-23T18:08:48 IST" duration-ms="333" status="PASS">
+        </test-method> <!-- setup_registrationPage -->
+        <test-method signature="doResgitrationTest()[pri:0, instance:tests.RegistrationPageTest@23e84203]" started-at="2024-04-30T19:23:22 IST" name="doResgitrationTest" finished-at="2024-04-30T19:23:23 IST" duration-ms="1718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doResgitrationTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.RegistrationPageTest@23e84203]" started-at="2024-04-30T19:23:23 IST" name="teardown" finished-at="2024-04-30T19:23:23 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

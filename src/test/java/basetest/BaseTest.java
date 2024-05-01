@@ -8,28 +8,28 @@ import org.testng.annotations.BeforeTest;
 
 import configurationReader.ConfigurationReader;
 import driverfactory.DriverManager;
-import pages.RegistrationPage;
+import pages.LandingPage;
 
 public class BaseTest {
 
-	DriverManager driverManager;
-	WebDriver driver;
-	ConfigurationReader configReader;
-	Properties properties;
-	protected RegistrationPage registrationPage;
-	
+	protected DriverManager driverManager;
+	protected WebDriver driver;
+	protected ConfigurationReader configReader;
+	protected Properties properties;
+	protected LandingPage landingPage;
+
 	@BeforeTest
 	public void setup() {
 		configReader = new ConfigurationReader();
 		properties = configReader.initProperties();
 		driverManager = new DriverManager();
 		driver = driverManager.initDriver(properties);
-		registrationPage = new RegistrationPage(driver);
+		landingPage = new LandingPage(driver);
 	}
 	
 	@AfterTest
 	public void teardown() {
-		driver.quit();
+		//driver.quit();
 	}
 	
 }
