@@ -1,33 +1,45 @@
 package driverfactory;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class DriverManager {
 
-	private WebDriver driver;
+	// private WebDriver driver;
 	private static ThreadLocal<WebDriver> tl_driver = new ThreadLocal<>();
+	private BrowserOptionsManager browserOptions;
+	private Properties prop;
 
-	public WebDriver initDriver(Properties properties) {
+	public WebDriver initDriver(Properties prop) {
 
-		String browser = properties.getProperty("browser");
-		System.out.println("Launching browser... " + browser);
-		switch (browser.toLowerCase()) {
+		this.prop = prop;
+		String browsername = prop.getProperty("browser");
+		System.out.println("Launching browser... " + browsername);
+		
+		browserOptions = new BrowserOptionsManager(prop);
+
+		switch (browsername.toLowerCase()) {
 		case "chrome":
-			//driver = new ChromeDriver();
-			tl_driver.set(new ChromeDriver());
+			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
+				init_remoteDriver("chrome");
+			} else {
+				// driver = new ChromeDriver();
+				tl_driver.set(new ChromeDriver(browserOptions.setChromeOptions()));
+			}
 			break;
 		case "edge":
-			//driver = new EdgeDriver();
-			tl_driver.set(new EdgeDriver());
-			break;
-		case "firefox":
-			//driver = new FirefoxDriver();
-			tl_driver.set(new FirefoxDriver());
+			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
+				init_remoteDriver("edge");
+			} else {
+				// driver = new EdgeDriver();
+				tl_driver.set(new EdgeDriver(browserOptions.setEdgeOptions()));
+			}
 			break;
 
 		default:
@@ -35,14 +47,36 @@ public class DriverManager {
 			break;
 		}
 
-		get_tlDriver().get(properties.getProperty("url"));
+		get_tlDriver().get(prop.getProperty("url"));
 		get_tlDriver().manage().window().maximize();
 		get_tlDriver().manage().deleteAllCookies();
 
 		return get_tlDriver();
 	}
-	
+
 	public WebDriver get_tlDriver() {
 		return tl_driver.get();
+	}
+
+	private void init_remoteDriver(String browser) {
+		System.out.println("Running tests on grid server :: " + browser);
+		try {
+			switch (browser) {
+			case "chrome":
+				tl_driver.set(
+						new RemoteWebDriver(new URL(prop.getProperty("huburl")), browserOptions.setChromeOptions()));
+				break;
+			case "edge":
+				tl_driver
+						.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), browserOptions.setEdgeOptions()));
+				break;
+			default:
+				System.out.println("Please provide a correct browser name..");
+				break;
+			}
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+
 	}
 }

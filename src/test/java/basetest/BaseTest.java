@@ -5,8 +5,9 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
-import configurationReader.ConfigurationReader;
+import configurationReader.ConfigurationPropReader;
 import driverfactory.DriverManager;
 import pages.AppointmentConfirmationPage;
 import pages.AppointmentPage;
@@ -17,17 +18,21 @@ public class BaseTest {
 
 	protected DriverManager driverManager;
 	protected WebDriver driver;
-	protected ConfigurationReader configReader;
+	protected ConfigurationPropReader configReader;
 	protected Properties properties;
 	protected LandingPage landingPage;
 	protected LoginPage loginPage;
 	protected AppointmentPage appointmentPage;
 	protected AppointmentConfirmationPage appointmentConfirmPage;
 
+	@Parameters({"browser"})
 	@BeforeTest
-	public void setup() {
-		configReader = new ConfigurationReader();
+	public void setup(String browserName) {
+		configReader = new ConfigurationPropReader();
 		properties = configReader.initProperties();
+		if(browserName!=null) {
+			properties.setProperty("browser", browserName);
+		}
 		driverManager = new DriverManager();
 		driver = driverManager.initDriver(properties);
 		landingPage = new LandingPage(driver);
