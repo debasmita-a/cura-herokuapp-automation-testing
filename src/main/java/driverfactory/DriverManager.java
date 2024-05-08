@@ -12,9 +12,9 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class DriverManager {
 
 	// private WebDriver driver;
-	private static ThreadLocal<WebDriver> tl_driver = new ThreadLocal<>();
-	private BrowserOptionsManager browserOptions;
-	private Properties prop;
+	 static ThreadLocal<WebDriver> tl_driver = new ThreadLocal<WebDriver>();
+	 BrowserOptionsManager browserOptions;
+	 Properties prop;
 
 	public WebDriver initDriver(Properties prop) {
 

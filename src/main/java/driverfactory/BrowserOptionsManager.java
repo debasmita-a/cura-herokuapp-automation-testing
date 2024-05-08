@@ -20,7 +20,7 @@ public class BrowserOptionsManager {
 		
 		
 		if(Boolean.parseBoolean(properties.getProperty("remote")))
-			co.setCapability("browsername", "chrome");
+			co.setCapability("browserName", "chrome");
 		
 		return co;
 	}
@@ -28,9 +28,9 @@ public class BrowserOptionsManager {
 	public EdgeOptions setEdgeOptions() {
 		eo = new EdgeOptions();
 		
-		
-		if(Boolean.parseBoolean(properties.getProperty("remote")))
-			eo.setCapability("browsername", "edge");
+		if(Boolean.parseBoolean(properties.getProperty("remote"))) {}
+			//eo.setCapability("browserName", "edge");
+			
 		
 		return eo;
 	}
