@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.AppointmentConfirmationPageTest">
+      <class name="tests.AppointmentPageTest">
         <methods>
           <include name="teardown"/>
-          <include name="getConfirmationMsg" invocation-numbers="1"/>
-          <include name="appointmentConfirmPage_setup"/>
           <include name="setup"/>
+          <include name="appointmentPage_setup"/>
+          <include name="getPageUrlTest"/>
         </methods>
-      </class> <!-- tests.AppointmentConfirmationPageTest -->
+      </class> <!-- tests.AppointmentPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

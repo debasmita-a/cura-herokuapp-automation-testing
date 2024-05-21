@@ -10,8 +10,12 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
+
 		<extentreports-version>5.0.8</extentreports-version>
 		<aspectj.version>1.9.5</aspectj.version>
+
+		<aspectj.version>1.9.19</aspectj.version>
+
 	</properties>
 
 	<dependencies>
@@ -20,19 +24,15 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.19.1</version>
+			<version>4.20.0</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.10.1</version>
+			<version>7.10.2</version>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>${extentreports-version}</version>
 		</dependency>
 
 		<dependency>
@@ -40,7 +40,9 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>${aspectj.version}</version>
 		</dependency>
+
 	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -79,7 +81,6 @@
 						<version>${aspectj.version}</version>
 					</dependency>
 				</dependencies>
-
 			</plugin>
 
 		</plugins>

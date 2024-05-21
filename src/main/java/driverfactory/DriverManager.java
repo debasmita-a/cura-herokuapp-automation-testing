@@ -1,7 +1,8 @@
 package driverfactory;
 
 import java.net.MalformedURLException;
-import java.net.URL;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -12,9 +13,9 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class DriverManager {
 
 	// private WebDriver driver;
-	private static ThreadLocal<WebDriver> tl_driver = new ThreadLocal<>();
-	private BrowserOptionsManager browserOptions;
-	private Properties prop;
+	 static ThreadLocal<WebDriver> tl_driver = new ThreadLocal<WebDriver>();
+	 BrowserOptionsManager browserOptions;
+	 Properties prop;
 
 	public WebDriver initDriver(Properties prop) {
 
@@ -58,23 +59,24 @@ public class DriverManager {
 		return tl_driver.get();
 	}
 
+	
 	private void init_remoteDriver(String browser) {
 		System.out.println("Running tests on grid server :: " + browser);
 		try {
 			switch (browser) {
 			case "chrome":
 				tl_driver.set(
-						new RemoteWebDriver(new URL(prop.getProperty("huburl")), browserOptions.setChromeOptions()));
+						new RemoteWebDriver(new URI(prop.getProperty("huburl")).toURL(), browserOptions.setChromeOptions()));
 				break;
 			case "edge":
 				tl_driver
-						.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), browserOptions.setEdgeOptions()));
+						.set(new RemoteWebDriver(new URI(prop.getProperty("huburl")).toURL(), browserOptions.setEdgeOptions()));
 				break;
 			default:
 				System.out.println("Please provide a correct browser name..");
 				break;
 			}
-		} catch (MalformedURLException e) {
+		} catch (MalformedURLException | URISyntaxException e) {
 			e.printStackTrace();
 		}
 
