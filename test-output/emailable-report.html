@@ -9,23 +9,122 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Regression Suite</th></tr>
-<tr><td><a href="#t0">Login Page Test_chrome</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10,721</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Appointment Page Test_edge</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,908</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Appointment Confirmation Page Test_chrome</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">34,007</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">9</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">57,636</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Login Page Test_chrome</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,016</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Appointment Confirmation Page Test_chrome</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">29,562</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Appointment Page Test_edge</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">181,057</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">8</th><th class="num attn">1</th><th class="num">0</th><th class="num">0</th><th class="num">219,635</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Page Test_chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.LoginPageTest</td><td><a href="#m0">getPageUrlTest</a></td><td rowspan="1">1715177725185</td><td rowspan="1">59</td></tr><tr class="passedeven"><td><a href="#m1">loginTextExistsTest</a></td><td rowspan="1">1715177725260</td><td rowspan="1">255</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Appointment Page Test_edge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.AppointmentPageTest</td><td><a href="#m2">getPageUrlTest</a></td><td rowspan="1">1715177726554</td><td rowspan="1">152</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Appointment Confirmation Page Test_chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">tests.AppointmentConfirmationPageTest</td><td><a href="#m3">getConfirmationMsg</a></td><td rowspan="2">1715177732742</td><td rowspan="2">2510</td></tr><tr class="passedeven"><td><a href="#m4">getConfirmationMsg</a></td></tr><tr class="passedeven"><td><a href="#m5">getFacilityValueTest</a></td><td rowspan="2">1715177741108</td><td rowspan="2">2280</td></tr><tr class="passedeven"><td><a href="#m6">getFacilityValueTest</a></td></tr><tr class="passedeven"><td><a href="#m7">getPageUrlTest</a></td><td rowspan="2">1715177743392</td><td rowspan="2">2629</td></tr><tr class="passedeven"><td><a href="#m8">getPageUrlTest</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Page Test_chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.LoginPageTest</td><td><a href="#m0">getPageUrlTest</a></td><td rowspan="1">1716011070053</td><td rowspan="1">75</td></tr><tr class="passedeven"><td><a href="#m1">loginTextExistsTest</a></td><td rowspan="1">1716011070134</td><td rowspan="1">208</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Appointment Confirmation Page Test_chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">tests.AppointmentConfirmationPageTest</td><td><a href="#m2">getConfirmationMsg</a></td><td rowspan="2">1716011076849</td><td rowspan="2">2272</td></tr><tr class="passedeven"><td><a href="#m3">getConfirmationMsg</a></td></tr><tr class="passedeven"><td><a href="#m4">getFacilityValueTest</a></td><td rowspan="2">1716011083496</td><td rowspan="2">3159</td></tr><tr class="passedeven"><td><a href="#m5">getFacilityValueTest</a></td></tr><tr class="passedeven"><td><a href="#m6">getPageUrlTest</a></td><td rowspan="2">1716011086662</td><td rowspan="2">2184</td></tr><tr class="passedeven"><td><a href="#m7">getPageUrlTest</a></td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Appointment Page Test_edge &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">tests.AppointmentPageTest</td><td><a href="#m8">setup</a></td><td rowspan="1">1716011061533</td><td rowspan="1">180966</td></tr><tr><th colspan="4">Appointment Page Test_edge &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">tests.AppointmentPageTest</td><td><a href="#m9">appointmentPage_setup</a></td><td rowspan="1">1716011242504</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m10">teardown</a></td><td rowspan="1">1716011242535</td><td rowspan="1">0</td></tr><tr><th colspan="4">Appointment Page Test_edge &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">tests.AppointmentPageTest</td><td><a href="#m11">getPageUrlTest</a></td><td rowspan="1">1716011242530</td><td rowspan="1">0</td></tr></tbody>
 </table>
 <h2>Login Page Test_chrome</h2><h3 id="m0">tests.LoginPageTest#getPageUrlTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">tests.LoginPageTest#loginTextExistsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Appointment Page Test_edge</h2><h3 id="m2">tests.AppointmentPageTest#getPageUrlTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Appointment Confirmation Page Test_chrome</h2><h3 id="m3">tests.AppointmentConfirmationPageTest#getConfirmationMsg</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Tokyo CURA Healthcare Center</td><td>true</td><td>Medicare</td><td>06/06/2024</td><td>Test Appointment 01</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.AppointmentConfirmationPageTest#getConfirmationMsg</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Hongkong CURA Healthcare Center</td><td>false</td><td>Medicaid</td><td>18/07/2024</td><td>Test Appointment 02</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.AppointmentConfirmationPageTest#getFacilityValueTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Hongkong CURA Healthcare Center</td><td>false</td><td>Medicaid</td><td>18/07/2024</td><td>Test Appointment 02</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">tests.AppointmentConfirmationPageTest#getFacilityValueTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Tokyo CURA Healthcare Center</td><td>true</td><td>Medicare</td><td>06/06/2024</td><td>Test Appointment 01</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">tests.AppointmentConfirmationPageTest#getPageUrlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Tokyo CURA Healthcare Center</td><td>true</td><td>Medicare</td><td>06/06/2024</td><td>Test Appointment 01</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">tests.AppointmentConfirmationPageTest#getPageUrlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Hongkong CURA Healthcare Center</td><td>false</td><td>Medicaid</td><td>18/07/2024</td><td>Test Appointment 02</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Appointment Confirmation Page Test_chrome</h2><h3 id="m2">tests.AppointmentConfirmationPageTest#getConfirmationMsg</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Tokyo CURA Healthcare Center</td><td>true</td><td>Medicare</td><td>06/06/2024</td><td>Test Appointment 01</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.AppointmentConfirmationPageTest#getConfirmationMsg</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Hongkong CURA Healthcare Center</td><td>false</td><td>Medicaid</td><td>18/07/2024</td><td>Test Appointment 02</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.AppointmentConfirmationPageTest#getFacilityValueTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Hongkong CURA Healthcare Center</td><td>false</td><td>Medicaid</td><td>18/07/2024</td><td>Test Appointment 02</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.AppointmentConfirmationPageTest#getFacilityValueTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Tokyo CURA Healthcare Center</td><td>true</td><td>Medicare</td><td>06/06/2024</td><td>Test Appointment 01</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.AppointmentConfirmationPageTest#getPageUrlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Tokyo CURA Healthcare Center</td><td>true</td><td>Medicare</td><td>06/06/2024</td><td>Test Appointment 01</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.AppointmentConfirmationPageTest#getPageUrlTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Hongkong CURA Healthcare Center</td><td>false</td><td>Medicaid</td><td>18/07/2024</td><td>Test Appointment 02</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Appointment Page Test_edge</h2><h3 id="m8">tests.AppointmentPageTest#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>edge</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DEBASMITA&apos;, ip: &apos;172.25.240.1&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at driverfactory.DriverManager.init_remoteDriver(DriverManager.java:71)
+	at driverfactory.DriverManager.initDriver(DriverManager.java:38)
+	at basetest.BaseTest.setup(BaseTest.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:396)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:352)
+	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 24 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:379)
+	... 34 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.AppointmentPageTest#appointmentPage_setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.AppointmentPageTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.AppointmentPageTest#getPageUrlTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DEBASMITA&apos;, ip: &apos;172.25.240.1&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at driverfactory.DriverManager.init_remoteDriver(DriverManager.java:71)
+	at driverfactory.DriverManager.initDriver(DriverManager.java:38)
+	at basetest.BaseTest.setup(BaseTest.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:396)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:352)
+	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 24 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:379)
+	... 34 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

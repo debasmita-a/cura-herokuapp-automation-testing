@@ -28,10 +28,10 @@ public class BrowserOptionsManager {
 	public EdgeOptions setEdgeOptions() {
 		eo = new EdgeOptions();
 		
-		if(Boolean.parseBoolean(properties.getProperty("remote"))) {}
-			//eo.setCapability("browserName", "edge");
-			
-		
+		if(Boolean.parseBoolean(properties.getProperty("remote"))) {
+			eo.setCapability("browserName", "msedge");
+		}
+	
 		return eo;
 	}
 }
