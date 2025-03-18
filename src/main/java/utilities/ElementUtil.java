@@ -44,7 +44,7 @@ public class ElementUtil {
 	public String getElementText(By locator) {
 		return getElement(locator).getText();
 	}
-	// select utilis:
+	// select utils:
 	
 	public void elementSelectByValue(By locator, String value) {
 		Select select = new Select(getElement(locator));

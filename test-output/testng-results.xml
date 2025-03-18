@@ -1,253 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="8" failed="0" skipped="1">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-18T11:14:21 IST" name="Regression Suite" finished-at="2024-05-18T11:17:22 IST" duration-ms="181057">
+  <suite started-at="2024-06-21T13:59:59 IST" name="Regression Suite" finished-at="2024-06-21T14:00:18 IST" duration-ms="19189">
     <groups>
     </groups>
-    <test started-at="2024-05-18T11:14:21 IST" name="Login Page Test_chrome" finished-at="2024-05-18T11:14:30 IST" duration-ms="9016">
-      <class name="tests.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginPageTest@3e78b6a5]" started-at="2024-05-18T11:14:21 IST" name="setup" finished-at="2024-05-18T11:14:29 IST" duration-ms="7481" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="loginPage_setup()[pri:0, instance:tests.LoginPageTest@3e78b6a5]" started-at="2024-05-18T11:14:29 IST" name="loginPage_setup" finished-at="2024-05-18T11:14:30 IST" duration-ms="950" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPage_setup -->
-        <test-method signature="getPageUrlTest()[pri:0, instance:tests.LoginPageTest@3e78b6a5]" started-at="2024-05-18T11:14:30 IST" name="getPageUrlTest" finished-at="2024-05-18T11:14:30 IST" duration-ms="75" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getPageUrlTest -->
-        <test-method signature="loginTextExistsTest()[pri:0, instance:tests.LoginPageTest@3e78b6a5]" started-at="2024-05-18T11:14:30 IST" name="loginTextExistsTest" finished-at="2024-05-18T11:14:30 IST" duration-ms="208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTextExistsTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginPageTest@3e78b6a5]" started-at="2024-05-18T11:14:30 IST" name="teardown" finished-at="2024-05-18T11:14:30 IST" duration-ms="148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.LoginPageTest -->
-    </test> <!-- Login Page Test_chrome -->
-    <test started-at="2024-05-18T11:14:21 IST" name="Appointment Confirmation Page Test_chrome" finished-at="2024-05-18T11:14:51 IST" duration-ms="29562">
-      <class name="tests.AppointmentConfirmationPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@6531a794]" started-at="2024-05-18T11:14:21 IST" name="setup" finished-at="2024-05-18T11:14:34 IST" duration-ms="13323" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="appointmentConfirmPage_setup()[pri:0, instance:tests.AppointmentConfirmationPageTest@6531a794]" started-at="2024-05-18T11:14:34 IST" name="appointmentConfirmPage_setup" finished-at="2024-05-18T11:14:36 IST" duration-ms="1987" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appointmentConfirmPage_setup -->
-        <test-method signature="getConfirmationMsg(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@6531a794]" started-at="2024-05-18T11:14:36 IST" name="getConfirmationMsg" data-provider="appointmentDetails" finished-at="2024-05-18T11:14:39 IST" duration-ms="2272" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tokyo CURA Healthcare Center]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Medicare]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[06/06/2024]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test Appointment 01]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getConfirmationMsg -->
-        <test-method signature="getConfirmationMsg(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@6531a794]" started-at="2024-05-18T11:14:39 IST" name="getConfirmationMsg" data-provider="appointmentDetails" finished-at="2024-05-18T11:14:41 IST" duration-ms="2191" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Hongkong CURA Healthcare Center]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Medicaid]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[18/07/2024]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test Appointment 02]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getConfirmationMsg -->
-        <test-method signature="getFacilityValueTest(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@6531a794]" started-at="2024-05-18T11:14:41 IST" name="getFacilityValueTest" data-provider="appointmentDetails" finished-at="2024-05-18T11:14:43 IST" duration-ms="2172" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tokyo CURA Healthcare Center]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Medicare]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[06/06/2024]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test Appointment 01]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getFacilityValueTest -->
-        <test-method signature="getFacilityValueTest(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@6531a794]" started-at="2024-05-18T11:14:43 IST" name="getFacilityValueTest" data-provider="appointmentDetails" finished-at="2024-05-18T11:14:46 IST" duration-ms="3159" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Hongkong CURA Healthcare Center]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Medicaid]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[18/07/2024]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test Appointment 02]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getFacilityValueTest -->
-        <test-method signature="getPageUrlTest(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@6531a794]" started-at="2024-05-18T11:14:46 IST" name="getPageUrlTest" data-provider="appointmentDetails" finished-at="2024-05-18T11:14:48 IST" duration-ms="2184" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tokyo CURA Healthcare Center]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Medicare]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[06/06/2024]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test Appointment 01]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getPageUrlTest -->
-        <test-method signature="getPageUrlTest(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@6531a794]" started-at="2024-05-18T11:14:48 IST" name="getPageUrlTest" data-provider="appointmentDetails" finished-at="2024-05-18T11:14:50 IST" duration-ms="2085" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Hongkong CURA Healthcare Center]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Medicaid]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[18/07/2024]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Test Appointment 02]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getPageUrlTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AppointmentConfirmationPageTest@6531a794]" started-at="2024-05-18T11:14:50 IST" name="teardown" finished-at="2024-05-18T11:14:51 IST" duration-ms="101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.AppointmentConfirmationPageTest -->
-    </test> <!-- Appointment Confirmation Page Test_chrome -->
-    <test started-at="2024-05-18T11:14:21 IST" name="Appointment Page Test_edge" finished-at="2024-05-18T11:17:22 IST" duration-ms="181057">
+    <test started-at="2024-06-21T13:59:59 IST" name="Appointment Page Test_edge" finished-at="2024-06-21T14:00:08 IST" duration-ms="8800">
       <class name="tests.AppointmentPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AppointmentPageTest@51bf5add]" started-at="2024-05-18T11:14:21 IST" name="setup" finished-at="2024-05-18T11:17:22 IST" duration-ms="180966" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AppointmentPageTest@a2431d0]" started-at="2024-06-21T13:59:59 IST" name="setup" finished-at="2024-06-21T14:00:05 IST" duration-ms="6173" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -255,136 +15,262 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DEBASMITA', ip: '172.25.240.1']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DEBASMITA', ip: '172.25.240.1'
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
-at driverfactory.DriverManager.init_remoteDriver(DriverManager.java:71)
-at driverfactory.DriverManager.initDriver(DriverManager.java:38)
-at basetest.BaseTest.setup(BaseTest.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:396)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:352)
-at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-... 24 more
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:379)
-... 34 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="appointmentPage_setup()[pri:0, instance:tests.AppointmentPageTest@51bf5add]" started-at="2024-05-18T11:17:22 IST" name="appointmentPage_setup" finished-at="2024-05-18T11:17:22 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="appointmentPage_setup()[pri:0, instance:tests.AppointmentPageTest@a2431d0]" started-at="2024-06-21T14:00:05 IST" name="appointmentPage_setup" finished-at="2024-06-21T14:00:07 IST" duration-ms="1250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appointmentPage_setup -->
-        <test-method signature="getPageUrlTest()[pri:0, instance:tests.AppointmentPageTest@51bf5add]" started-at="2024-05-18T11:17:22 IST" name="getPageUrlTest" finished-at="2024-05-18T11:17:22 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DEBASMITA', ip: '172.25.240.1']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DEBASMITA', ip: '172.25.240.1'
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
-at driverfactory.DriverManager.init_remoteDriver(DriverManager.java:71)
-at driverfactory.DriverManager.initDriver(DriverManager.java:38)
-at basetest.BaseTest.setup(BaseTest.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
-at org.testng.TestRunner.beforeRun(TestRunner.java:644)
-at org.testng.TestRunner.run(TestRunner.java:610)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:396)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:352)
-at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-... 24 more
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:379)
-... 34 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="getPageUrlTest()[pri:0, instance:tests.AppointmentPageTest@a2431d0]" started-at="2024-06-21T14:00:07 IST" name="getPageUrlTest" finished-at="2024-06-21T14:00:07 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPageUrlTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AppointmentPageTest@51bf5add]" started-at="2024-05-18T11:17:22 IST" name="teardown" finished-at="2024-05-18T11:17:22 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AppointmentPageTest@a2431d0]" started-at="2024-06-21T14:00:07 IST" name="teardown" finished-at="2024-06-21T14:00:08 IST" duration-ms="1329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.AppointmentPageTest -->
     </test> <!-- Appointment Page Test_edge -->
+    <test started-at="2024-06-21T13:59:59 IST" name="Login Page Test_chrome" finished-at="2024-06-21T14:00:11 IST" duration-ms="12004">
+      <class name="tests.LoginPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginPageTest@3541cb24]" started-at="2024-06-21T13:59:59 IST" name="setup" finished-at="2024-06-21T14:00:10 IST" duration-ms="11210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginPage_setup()[pri:0, instance:tests.LoginPageTest@3541cb24]" started-at="2024-06-21T14:00:10 IST" name="loginPage_setup" finished-at="2024-06-21T14:00:11 IST" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage_setup -->
+        <test-method signature="getPageUrlTest()[pri:0, instance:tests.LoginPageTest@3541cb24]" started-at="2024-06-21T14:00:11 IST" name="getPageUrlTest" finished-at="2024-06-21T14:00:11 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPageUrlTest -->
+        <test-method signature="loginTextExistsTest()[pri:0, instance:tests.LoginPageTest@3541cb24]" started-at="2024-06-21T14:00:11 IST" name="loginTextExistsTest" finished-at="2024-06-21T14:00:11 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTextExistsTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginPageTest@3541cb24]" started-at="2024-06-21T14:00:11 IST" name="teardown" finished-at="2024-06-21T14:00:11 IST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.LoginPageTest -->
+    </test> <!-- Login Page Test_chrome -->
+    <test started-at="2024-06-21T13:59:59 IST" name="Appointment Confirmation Page Test_chrome" finished-at="2024-06-21T14:00:18 IST" duration-ms="19189">
+      <class name="tests.AppointmentConfirmationPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@33990a0c]" started-at="2024-06-21T13:59:59 IST" name="setup" finished-at="2024-06-21T14:00:12 IST" duration-ms="12471" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="appointmentConfirmPage_setup()[pri:0, instance:tests.AppointmentConfirmationPageTest@33990a0c]" started-at="2024-06-21T14:00:12 IST" name="appointmentConfirmPage_setup" finished-at="2024-06-21T14:00:13 IST" duration-ms="1299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appointmentConfirmPage_setup -->
+        <test-method signature="getConfirmationMsg(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@33990a0c]" started-at="2024-06-21T14:00:13 IST" name="getConfirmationMsg" data-provider="appointmentDetails" finished-at="2024-06-21T14:00:14 IST" duration-ms="965" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tokyo CURA Healthcare Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Medicare]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[06/06/2024]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Appointment 01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getConfirmationMsg -->
+        <test-method signature="getConfirmationMsg(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@33990a0c]" started-at="2024-06-21T14:00:14 IST" name="getConfirmationMsg" data-provider="appointmentDetails" finished-at="2024-06-21T14:00:15 IST" duration-ms="855" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hongkong CURA Healthcare Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Medicaid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[18/07/2024]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Appointment 02]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getConfirmationMsg -->
+        <test-method signature="getFacilityValueTest(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@33990a0c]" started-at="2024-06-21T14:00:15 IST" name="getFacilityValueTest" data-provider="appointmentDetails" finished-at="2024-06-21T14:00:16 IST" duration-ms="866" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tokyo CURA Healthcare Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Medicare]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[06/06/2024]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Appointment 01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFacilityValueTest -->
+        <test-method signature="getFacilityValueTest(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@33990a0c]" started-at="2024-06-21T14:00:16 IST" name="getFacilityValueTest" data-provider="appointmentDetails" finished-at="2024-06-21T14:00:17 IST" duration-ms="846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hongkong CURA Healthcare Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Medicaid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[18/07/2024]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Appointment 02]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFacilityValueTest -->
+        <test-method signature="getPageUrlTest(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@33990a0c]" started-at="2024-06-21T14:00:17 IST" name="getPageUrlTest" data-provider="appointmentDetails" finished-at="2024-06-21T14:00:17 IST" duration-ms="868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tokyo CURA Healthcare Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Medicare]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[06/06/2024]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Appointment 01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPageUrlTest -->
+        <test-method signature="getPageUrlTest(java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AppointmentConfirmationPageTest@33990a0c]" started-at="2024-06-21T14:00:17 IST" name="getPageUrlTest" data-provider="appointmentDetails" finished-at="2024-06-21T14:00:18 IST" duration-ms="844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hongkong CURA Healthcare Center]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Medicaid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[18/07/2024]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Appointment 02]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPageUrlTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AppointmentConfirmationPageTest@33990a0c]" started-at="2024-06-21T14:00:18 IST" name="teardown" finished-at="2024-06-21T14:00:18 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.AppointmentConfirmationPageTest -->
+    </test> <!-- Appointment Confirmation Page Test_chrome -->
   </suite> <!-- Regression Suite -->
 </testng-results>
