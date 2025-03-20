@@ -1,63 +1,60 @@
 package utilities;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import driverfactory.DriverManager;
+
 public class ElementUtil {
 
-	private WebDriver driver;
-	
-	public ElementUtil(WebDriver driver) {
-		this.driver = driver;
-	}
-	
 	//element utilities :
 	
-	public WebElement getElement(By locator) {
-		return driver.findElement(locator);
+	public static WebElement getElement(By locator) {
+		return DriverManager.getDriver().findElement(locator);
 	}
 	
-	public List<WebElement> getElements(By locator){
-		return driver.findElements(locator);
+	public static List<WebElement> getElements(By locator){
+		return DriverManager.getDriver().findElements(locator);
 	}
 	
-	public void doClick(By locator) {
+	public static void doClick(By locator) {
 		getElement(locator).click();
 	}
 	
-	public void doSendKeys(By locator, String value) {
+	public static void doSendKeys(By locator, String value) {
 		getElement(locator).sendKeys(value);
 	}
 	
-	public boolean isElementDisplayed(By locator) {
+	public static boolean isElementDisplayed(By locator) {
 		return getElement(locator).isDisplayed();
 	}
-	
-	public String getElementAttributeByValue(By locator, String value) {
-		return getElement(locator).getAttribute(value);
-	}
-	
-	public String getElementText(By locator) {
+		
+	public static String getElementText(By locator) {
 		return getElement(locator).getText();
 	}
 	// select utils:
 	
-	public void elementSelectByValue(By locator, String value) {
+	public static void elementSelectByValue(By locator, String value) {
 		Select select = new Select(getElement(locator));
 		select.selectByValue(value);
+	}
+
+	public static void elementSelect(By locator, Consumer<Select> consumer){
+		consumer.accept(new Select(getElement(locator)));
+		
 	}
 	
 	//browser utilities :
 	
-	public String getCurrentUrl() {
-		return driver.getCurrentUrl();
+	public static String getCurrentUrl() {
+		return DriverManager.getDriver().getCurrentUrl();
 	}
 	
-	public String getCurrentPageTitle() {
-		return driver.getTitle();
+	public static String getCurrentPageTitle() {
+		return DriverManager.getDriver().getTitle();
 	}
 }

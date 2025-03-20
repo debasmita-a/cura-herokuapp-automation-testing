@@ -1,40 +1,38 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 import utilities.ElementUtil;
 
 public class LoginPage {
 
-	private WebDriver driver;
-	private ElementUtil util;
-	
-	public LoginPage(WebDriver driver) {
-		this.driver = driver;
-		util = new ElementUtil(driver);
+	private static final By LEAD_TEXT = By.className("lead");
+	private static final By USERNAME_TEXT = By.id("txt-username");
+	private static final By PASSWORD_TEXT = By.id("txt-password");
+	private static final By LOGIN_BTN = By.id("btn-login");
+
+	public String getLoginPageLeadText(){
+		return ElementUtil.getElementText(LEAD_TEXT);
 	}
-	
-	//private By locators:
-	private By loginText = By.xpath("//h2");
-	private By username = By.id("txt-username");
-	private By password = By.id("txt-password");
-	private By loginBtn = By.id("btn-login");
-	
-	//public page actions:
-	
-	public String getPageUrl() {
-		return util.getCurrentUrl();
+
+	private LoginPage enterUserName(String userName){
+		ElementUtil.doSendKeys(USERNAME_TEXT, userName);
+		return this;
 	}
-	
-	public boolean loginTextExists() {
-		return util.isElementDisplayed(loginText);
+
+	private LoginPage enterPassword(String password){
+		ElementUtil.doSendKeys(PASSWORD_TEXT, password);
+		return this;
 	}
-	public AppointmentPage doLogin(String userName, String pass) {
-		util.doSendKeys(username, userName);
-		util.doSendKeys(password, pass);
-		util.doClick(loginBtn);
-		
-		return new AppointmentPage(driver);
+
+	private AppointmentPage clickLoginBtn(){
+		ElementUtil.doClick(LOGIN_BTN);
+		return new AppointmentPage();
 	}
+
+	public AppointmentPage doLogin(String userName, String password){
+		return enterUserName(userName).enterPassword(password).clickLoginBtn();
+	}
+
+
 }

@@ -34,7 +34,7 @@ public class BaseTest {
 			properties.setProperty("browser", browserName);
 		}
 		driverManager = new DriverManager();
-		driver = driverManager.initDriver(properties);
+		driver = driverManager.initDriver();
 		landingPage = new LandingPage(driver);
 	}
 	
