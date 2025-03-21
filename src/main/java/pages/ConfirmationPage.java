@@ -8,6 +8,4 @@ public class ConfirmationPage {
 	private static final By facilityValue = By.id("facility");
 	private static final By goToHomePage = By.linkText("Go to Homepage");
 
-	
-
 }

@@ -1,27 +1,26 @@
 package tests;
 
-import org.testng.Assert;
+import org.junit.Test;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
 import basetest.BaseTest;
-import frameworkConstants.FrameworkConstants;
+import pages.HeaderComponent;
+import pages.LoginPage;
 
 public class LoginPageTest extends BaseTest{
-	
-	@BeforeClass
-	public void loginPage_setup() {
-		loginPage = landingPage.doClickMakeAppointmentBtn();
-	}
 
-	@Test
-	public void getPageUrlTest() {
-		Assert.assertTrue(loginPage.getPageUrl().contains(FrameworkConstants.LOGIN_PAGE_URL));
-	}
-	
-	@Test
-	public void loginTextExistsTest() {
-		Assert.assertTrue(loginPage.loginTextExists());
-	}
+    LoginPage loginPage = null;
 
+    @BeforeClass
+    public void setupLoginPage(){
+        HeaderComponent header = new HeaderComponent();
+        loginPage = header.navigateToLoginPage();
+    }
+
+    @Test
+    public void loginTest(){
+        loginPage.enterUserName("John Doe")
+        .enterPassword("ThisIsNotAPassword")
+        .clickLoginBtn();
+    }
 }
