@@ -1,21 +1,16 @@
 package basetest;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 
 import driverfactory.Driver;
 
 public class BaseTest {
 
-	@BeforeTest
+	@BeforeMethod
 	public void setup(){
-		Driver.initDriver();
+		Driver.initDriver(); 
 	}
 
-	@AfterTest
-	public void teardown(){
-
-	}
 }	
 	
 

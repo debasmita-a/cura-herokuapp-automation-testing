@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 
+import frameworkConstants.FrameworkConstants;
 import utilities.ElementUtil;
 
 public class HeaderComponent {
@@ -11,8 +12,8 @@ public class HeaderComponent {
 	private static final By MENU_TOGGLE_BTN = By.id("menu-toggle");
 
     	
-	public static String getHeaderText(){
-		return ElementUtil.getElementText(HEADER_TEXT);
+	public static boolean getHeaderText(){
+		return ElementUtil.getElementText(HEADER_TEXT).equals(FrameworkConstants.HEADER_TEXT);
 	}
 
 	public LoginPage navigateToLoginPage(){
