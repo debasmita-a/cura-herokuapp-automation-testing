@@ -12,12 +12,17 @@ public class HeaderComponent {
 	private static final By MENU_TOGGLE_BTN = By.id("menu-toggle");
 
     	
-	public static boolean getHeaderText(){
+	public boolean getHeaderText(){
 		return ElementUtil.getElementText(HEADER_TEXT).equals(FrameworkConstants.HEADER_TEXT);
+	}
+
+	public boolean isMakeAppointmentBtnAvailable(){
+		return ElementUtil.isElementDisplayed(MAKE_APPOINTMENT_BTN);
 	}
 
 	public LoginPage navigateToLoginPage(){
 		ElementUtil.doClick(MAKE_APPOINTMENT_BTN);
 		return new LoginPage();
 	}
+	
 }

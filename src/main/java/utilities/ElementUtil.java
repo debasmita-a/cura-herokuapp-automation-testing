@@ -1,11 +1,14 @@
 package utilities;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.function.Consumer;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverfactory.DriverManager;
 
@@ -54,6 +57,11 @@ public class ElementUtil {
 		return DriverManager.getDriver().getCurrentUrl();
 	}
 	
+	public static void getCurrentUrlWithWait(String text) {
+		WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.titleContains(text));
+	}
+
 	public static String getCurrentPageTitle() {
 		return DriverManager.getDriver().getTitle();
 	}

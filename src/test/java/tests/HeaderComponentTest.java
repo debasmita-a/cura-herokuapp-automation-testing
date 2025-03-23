@@ -6,10 +6,18 @@ import org.testng.annotations.Test;
 import basetest.BaseTest;
 import pages.HeaderComponent;
 
-public class HeaderComponentTest extends BaseTest{
+public final class HeaderComponentTest extends BaseTest{
 
+    private HeaderComponentTest(){}
+    
     @Test
     public void getHeaderTextText(){
-        Assert.assertTrue(HeaderComponent.getHeaderText());
+        Assert.assertTrue(new HeaderComponent().getHeaderText());
     }
+
+    @Test
+    public void isMakeAppointmentBtnAvailableTest(){
+        Assert.assertTrue(new HeaderComponent().isMakeAppointmentBtnAvailable());
+    }
+
 }

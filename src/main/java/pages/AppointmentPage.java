@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 
+import frameworkConstants.FrameworkConstants;
 import utilities.ElementUtil;
 
 public class AppointmentPage {
@@ -12,6 +13,10 @@ public class AppointmentPage {
 	private static final By DATE_TEXT = By.id("txt_visit_date");
 	private static final By COMMENTS_TEXT = By.id("txt_comment");
 	private static final By BOOK_APPOINTMENT_BTN = By.id("btn-book-appointment");
+
+	public void getAppointmentPageTitle(){
+		ElementUtil.getCurrentUrlWithWait(FrameworkConstants.APPOINTMENT_PAGE_URL);
+	}
 
 	private AppointmentPage enterFacility(String facilityName){
 		ElementUtil.elementSelect(FACILITY_DROPDOWN, e->e.selectByVisibleText(facilityName));

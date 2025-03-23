@@ -17,17 +17,17 @@ public class LoginPage {
 		return ElementUtil.getElementText(LEAD_TEXT);
 	}
 
-	public LoginPage enterUserName(String userName){
+	private LoginPage enterUserName(String userName){
 		ElementUtil.doSendKeys(USERNAME_TEXT, userName);
 		return this;
 	}
 
-	public LoginPage enterPassword(String password){
+	private LoginPage enterPassword(String password){
 		ElementUtil.doSendKeys(PASSWORD_TEXT, password);
 		return this;
 	}
 
-	public AppointmentPage clickLoginBtn(){
+	private AppointmentPage clickLoginBtn(){
 		ElementUtil.doClick(LOGIN_BTN);
 		return new AppointmentPage();
 	}

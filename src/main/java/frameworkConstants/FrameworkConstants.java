@@ -8,4 +8,5 @@ public class FrameworkConstants {
 	public static final String CONFIRMATION_PAGE_URL = "#summary";
 	public static final String CONFIRMATION = "Appointment Confirmation";
 	public static final String ERROR_MSG = "Login failed! Please ensure the username and password are valid.";
+	public static final String LOGIN_LEAD_TEXT = "Please login to make appointment.";
 }
