@@ -2,10 +2,7 @@ name : unit-tests
 
 on :
     push : 
-        branches: 
-            - master 
-        branches-ignore: 
-            - develop
+        branches: 'master'
     
     pull_request: 
         types: [opened, synchronize, closed]
