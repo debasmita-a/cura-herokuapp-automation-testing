@@ -1,27 +1,28 @@
-name : unit-tests
+name: unit-tests
 
-on :
-    push : 
-        branches: 'master'
-    
-    pull_request: 
-        types: [opened, synchronize, closed]
-    
-jobs : 
-    build :
-        runs-on: self-hosted
-        steps : 
-            - name : Checks out the project on runner
-              uses : actions/checkout@v4
+on:
+  push:
+    branches: "master"
 
-            - name : Set up JDK 21
-              uses : actions/setup-java@v4
-              with : 
-                java-version : '21'
-                distribution: 'oracle'
-            - name : Run unit tests
-              run : |
-                mvn clean test      
+  pull_request:
+    types: [opened, synchronize, closed]
 
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Checks out the project on runner
+        uses: actions/checkout@v4
 
-
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: "21"
+          distribution: "oracle"
+      - name: Run unit tests
+        run: |
+          mvn clean test  
+      - name: Save Maven cache
+        uses: skjolber/maven-cache-github-action@v3.1.1
+        with:
+          step: save
