@@ -22,7 +22,6 @@ jobs :
             - name : Run unit tests
               shell : powershell
               run : |
-                mvn -v
                 mvn clean test      
 
 
