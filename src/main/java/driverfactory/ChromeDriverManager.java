@@ -15,6 +15,11 @@ public class ChromeDriverManager implements BrowserManager {
     @Override
     public Capabilities setCapabilities() {
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new"); // Ensure new headless mode is used
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--remote-allow-origins=*");
         options.setCapability("browserName", "Chrome");
         return options;
     }
