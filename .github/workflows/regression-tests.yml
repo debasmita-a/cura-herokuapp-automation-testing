@@ -18,6 +18,7 @@ jobs :
               uses : actions/setup-java@v4
               with : 
                 java-version : '21'
+                distribution: 'oracle'
             - name : Run unit tests
               shell : powershell
               run : |
