@@ -14,8 +14,8 @@ public class AppointmentPage {
 	private static final By COMMENTS_TEXT = By.id("txt_comment");
 	private static final By BOOK_APPOINTMENT_BTN = By.id("btn-book-appointment");
 
-	public void getAppointmentPageTitle(){
-		ElementUtil.getCurrentUrlWithWait(FrameworkConstants.APPOINTMENT_PAGE_URL);
+	public boolean getAppointmentPageTitle(){
+		return ElementUtil.getCurrentUrlWithWait(FrameworkConstants.APPOINTMENT_PAGE_URL);
 	}
 
 	private AppointmentPage enterFacility(String facilityName){

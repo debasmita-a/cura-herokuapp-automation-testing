@@ -23,7 +23,7 @@ public final class LoginPageTest extends BaseTest{
     public void userLoginTest(){
         LoginPage loginPage = new HeaderComponent().navigateToLoginPage();
         AppointmentPage appointmentPage = loginPage.doLogin("John Doe", "ThisIsNotAPassword");
-        Assert.assertTrue(appointmentPage.getAppointmentPageTitle().contains(FrameworkConstants.APPOINTMENT_PAGE_URL));
+        Assert.assertTrue(appointmentPage.getAppointmentPageTitle());
     }
 
 

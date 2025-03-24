@@ -57,9 +57,9 @@ public class ElementUtil {
 		return DriverManager.getDriver().getCurrentUrl();
 	}
 	
-	public static void getCurrentUrlWithWait(String text) {
+	public static boolean getCurrentUrlWithWait(String text) {
 		WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(5));
-		wait.until(ExpectedConditions.titleContains(text));
+		return wait.until(ExpectedConditions.urlContains(text));
 	}
 
 	public static String getCurrentPageTitle() {
