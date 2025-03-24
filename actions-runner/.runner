@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "CPC-debas-HPLU6",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus15.actions.githubusercontent.com/bEfIhXY5hXmH7wFHcChE95pLL5CK6IbAu7txqsAfs9Isf4Rfzh/",
+  "gitHubUrl": "https://github.com/debasmita-a/cura-herokuapp-automation-testing",
+  "workFolder": "_work"
+}
