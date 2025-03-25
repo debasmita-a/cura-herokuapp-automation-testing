@@ -10,10 +10,6 @@ import pages.LoginPage;
 
 public class BaseTest {
 
-	protected HeaderComponent header;
-	protected LoginPage loginPage;
-	protected AppointmentPage appointmentPage;
-
 	@BeforeTest
 	public void setup(){
 		Driver.initDriver(); 

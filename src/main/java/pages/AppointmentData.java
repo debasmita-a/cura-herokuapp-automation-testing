@@ -7,10 +7,10 @@ import lombok.Getter;
 @Getter
 public class AppointmentData {
 
-    public String facility;
-    public boolean isReadmission;
-    public String healthCareProgram;
-    public String dateOfVisit;
-    public String comments;
+    private String facility;
+    private boolean isReadmission;
+    private String healthCareProgram;
+    private String dateOfVisit;
+    private String comments;
 
 }
