@@ -56,9 +56,12 @@ tmp/
 local.properties
 .loadpath
 .factorypath
+/action-runner/
+.classpath
 
 ## OS X
 ##############################
 .DS_Store
 /.apt_generated/
 /.apt_generated_tests/
+/test-output/
