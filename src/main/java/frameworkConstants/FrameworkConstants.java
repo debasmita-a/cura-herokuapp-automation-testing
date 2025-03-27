@@ -1,6 +1,8 @@
 package frameworkConstants;
 
 public class FrameworkConstants {
+	
+	public static final String CONFIF_FILE_PATH = ".src/test/resources/config/config.properties";
 
 	public static final String HEADER_TEXT = "CURA Healthcare Service";
 	public static final String APPOINTMENT_PAGE_URL = "#appointment";
