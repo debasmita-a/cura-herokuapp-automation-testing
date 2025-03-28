@@ -20,7 +20,7 @@ public final class PropertyUtil {
 
 	static {
 		try {
-			FileInputStream configFile = new FileInputStream(FrameworkConstants.CONFIF_FILE_PATH);
+			FileInputStream configFile = new FileInputStream(FrameworkConstants.getConfifFilePath());
 			property.load(configFile);
 			for (Map.Entry<Object, Object> entry : property.entrySet()) {
 				CONFIG_MAP.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue()));

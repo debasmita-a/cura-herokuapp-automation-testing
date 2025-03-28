@@ -2,8 +2,18 @@ package frameworkConstants;
 
 public class FrameworkConstants {
 	
-	public static final String CONFIF_FILE_PATH = ".src/test/resources/config/config.properties";
+	private FrameworkConstants() {}
+	
+	private static final String CONFIF_FILE_PATH = ".src/test/resources/config/config.properties";
+	private static final String EXCEL_FILE_PATH = ".src/test/resources/testdata/testdata.xlsx";
 
+	public static String getConfifFilePath() {
+		return CONFIF_FILE_PATH;
+	}
+	public static String getExcelFilePath() {
+		return EXCEL_FILE_PATH;
+	}
+	
 	public static final String HEADER_TEXT = "CURA Healthcare Service";
 	public static final String APPOINTMENT_PAGE_URL = "#appointment";
 	public static final String LOGIN_PAGE_URL = "#login";
