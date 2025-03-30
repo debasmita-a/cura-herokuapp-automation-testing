@@ -39,6 +39,11 @@ public class ElementUtil {
 	public static String getElementText(By locator) {
 		return getElement(locator).getText();
 	}
+	
+	public static String getElementTextWithWait(By locator, int timeout) {
+		WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(timeout));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).getText();
+	}
 	// select utils:
 	
 	public static void elementSelectByValue(By locator, String value) {

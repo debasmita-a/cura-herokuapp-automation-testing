@@ -1,21 +1,18 @@
 package basetest;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import driverfactory.Driver;
-import pages.AppointmentPage;
-import pages.HeaderComponent;
-import pages.LoginPage;
 
 public class BaseTest {
-
-	@BeforeTest
+	
+	@BeforeMethod
 	public void setup(){
 		Driver.initDriver(); 
 	}
 
-	@AfterTest
+	@AfterMethod
 	public void teardown(){
 		//Driver.teardown();
 	}

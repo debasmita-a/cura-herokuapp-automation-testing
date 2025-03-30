@@ -14,7 +14,7 @@ public class AppointmentPage {
 	private static final By COMMENTS_TEXT = By.id("txt_comment");
 	private static final By BOOK_APPOINTMENT_BTN = By.id("btn-book-appointment");
 
-	public boolean getAppointmentPageTitle(){
+	public boolean getAppointmentPageUrl(){
 		return ElementUtil.getCurrentUrlWithWait(FrameworkConstants.APPOINTMENT_PAGE_URL);
 	}
 

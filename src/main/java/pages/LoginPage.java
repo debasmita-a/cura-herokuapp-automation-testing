@@ -10,8 +10,7 @@ public class LoginPage {
 	private static final By USERNAME_TEXT = By.id("txt-username");
 	private static final By PASSWORD_TEXT = By.id("txt-password");
 	private static final By LOGIN_BTN = By.id("btn-login");
-
-	//TODO : -ve login
+	private static final By ERROR_MSG = By.xpath("//p[contains(@class,'text-danger')]");
 
 	public String getLoginPageLeadText(){
 		return ElementUtil.getElementText(LEAD_TEXT);
@@ -30,6 +29,10 @@ public class LoginPage {
 	private AppointmentPage clickLoginBtn(){
 		ElementUtil.doClick(LOGIN_BTN);
 		return new AppointmentPage();
+	}
+	
+	public String getErrorMessage() {
+		return ElementUtil.getElementTextWithWait(ERROR_MSG, 2);
 	}
 
 	public AppointmentPage doLogin(String userName, String password){
