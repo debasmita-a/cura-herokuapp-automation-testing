@@ -1,6 +1,6 @@
 # Test Reports & Logs
 allure-results/
-screenshots/
+
 test-output/
 build/
 application.log
