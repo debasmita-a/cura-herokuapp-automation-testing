@@ -11,7 +11,7 @@ public final class HeaderComponentTest extends BaseTest{
     private HeaderComponentTest(){}
     
     @Test
-    public void getHeaderTextText(){
+    public void getHeaderTextTest(){
         Assert.assertTrue(new HeaderComponent().getHeaderText());
     }
 

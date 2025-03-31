@@ -14,7 +14,7 @@ public class BaseTest {
 
 	@AfterMethod
 	public void teardown(){
-		//Driver.teardown();
+		Driver.teardown();
 	}
 
 }	

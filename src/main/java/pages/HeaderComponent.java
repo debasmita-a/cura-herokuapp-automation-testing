@@ -21,7 +21,7 @@ public class HeaderComponent {
 	}
 
 	public LoginPage navigateToLoginPage(){
-		ElementUtil.doClick(MAKE_APPOINTMENT_BTN);
+		ElementUtil.doClick(MAKE_APPOINTMENT_BTN, "Make Appointment button");
 		return new LoginPage();
 	}
 	

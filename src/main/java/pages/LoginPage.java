@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 
+import reports.ExtentLogger;
 import utilities.ElementUtil;
 
 public class LoginPage {
@@ -17,17 +18,17 @@ public class LoginPage {
 	}
 
 	private LoginPage enterUserName(String userName){
-		ElementUtil.doSendKeys(USERNAME_TEXT, userName);
+		ElementUtil.doSendKeys(USERNAME_TEXT, userName, "Username");
 		return this;
 	}
 
 	private LoginPage enterPassword(String password){
-		ElementUtil.doSendKeys(PASSWORD_TEXT, password);
+		ElementUtil.doSendKeys(PASSWORD_TEXT, password, "Password");
 		return this;
 	}
 
 	private AppointmentPage clickLoginBtn(){
-		ElementUtil.doClick(LOGIN_BTN);
+		ElementUtil.doClick(LOGIN_BTN, "Login button");
 		return new AppointmentPage();
 	}
 	
