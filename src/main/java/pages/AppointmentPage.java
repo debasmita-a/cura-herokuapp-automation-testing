@@ -25,29 +25,29 @@ public class AppointmentPage {
 
 	private AppointmentPage isReadmissionCheck(boolean isAdmission){
 		if(isAdmission) {
-			ElementUtil.doClick(IS_READMISSION_CHECKBOX);
+			ElementUtil.doClick(IS_READMISSION_CHECKBOX, "Hospital Readmission");
 		}
 		return this;
 	}
 
 	private AppointmentPage selectHealthProgram(String program){
 		String xpath = String.format(program, PROGRAM_RADIO_BUTTONS);
-		ElementUtil.doClick(By.xpath(xpath));
+		ElementUtil.doClick(By.xpath(xpath), "Healthcare Program");
 		return this;
 	}
 
 	private AppointmentPage fillDate(String date){
-		ElementUtil.doSendKeys(DATE_TEXT, date);
+		ElementUtil.doSendKeys(DATE_TEXT, date, "Visit Date");
 		return this;
 	}
 
 	private AppointmentPage fillComments(String comments){
-		ElementUtil.doSendKeys(COMMENTS_TEXT, comments);
+		ElementUtil.doSendKeys(COMMENTS_TEXT, comments, "Comments");
 		return this;
 	}
 
 	private AppointmentPage clickBookAppointmentBtn(){
-		ElementUtil.doClick(BOOK_APPOINTMENT_BTN);
+		ElementUtil.doClick(BOOK_APPOINTMENT_BTN, "Book Appointment button");
 		return this;
 	}
 

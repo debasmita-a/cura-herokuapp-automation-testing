@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import driverfactory.DriverManager;
+import reports.ExtentLogger;
 
 public class ElementUtil {
 
@@ -24,12 +25,14 @@ public class ElementUtil {
 		return DriverManager.getDriver().findElements(locator);
 	}
 	
-	public static void doClick(By locator) {
+	public static void doClick(By locator, String elementName) {
 		getElement(locator).click();
+		ExtentLogger.pass(elementName + " is clicked");
 	}
 	
-	public static void doSendKeys(By locator, String value) {
+	public static void doSendKeys(By locator, String value, String elementName) {
 		getElement(locator).sendKeys(value);
+		ExtentLogger.pass(value + " is entered in the field " + elementName);
 	}
 	
 	public static boolean isElementDisplayed(By locator) {

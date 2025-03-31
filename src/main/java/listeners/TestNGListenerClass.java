@@ -1,72 +1,71 @@
 package listeners;
 
+import java.io.IOException;
+
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import reports.ExtentLogger;
+import reports.ExtentReport;
+
 public class TestNGListenerClass implements ITestListener, ISuiteListener{
 
 	
 	@Override
 	public void onStart(ISuite suite) {
-		// TODO Auto-generated method stub
-		ISuiteListener.super.onStart(suite);
+		ExtentReport.setupReporter();
 	}
 
 	@Override
 	public void onFinish(ISuite suite) {
-		// TODO Auto-generated method stub
-		ISuiteListener.super.onFinish(suite);
+		try {
+			ExtentReport.flushReporter();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestStart(result);
+		ExtentReport.createTest(result.getMethod().getMethodName());
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestSuccess(result);
+		ExtentLogger.pass(result.getMethod().getMethodName() + " is passed.");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestFailure(result);
+		ExtentLogger.fail(result.getMethod().getMethodName() + " is failed.");
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestSkipped(result);
+		ExtentLogger.skip(result.getMethod().getMethodName() + " is skipped.");
 	}
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestFailedButWithinSuccessPercentage(result);
+	
 	}
 
 	@Override
 	public void onTestFailedWithTimeout(ITestResult result) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onTestFailedWithTimeout(result);
+
 	}
 
 	@Override
 	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onStart(context);
+
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onFinish(context);
+	
 	}
 
 	
