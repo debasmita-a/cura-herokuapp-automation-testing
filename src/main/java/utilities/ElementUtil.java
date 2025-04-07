@@ -30,6 +30,12 @@ public class ElementUtil {
 		ExtentLogger.pass(elementName + " is clicked");
 	}
 	
+	public static void doClickWithWait(By locator, int timeout, String elementName) {
+		WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(timeout));
+		wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
+		ExtentLogger.pass(elementName + " is clicked");
+	}
+	
 	public static void doSendKeys(By locator, String value, String elementName) {
 		getElement(locator).sendKeys(value);
 		ExtentLogger.pass(value + " is entered in the field " + elementName);
@@ -48,15 +54,11 @@ public class ElementUtil {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).getText();
 	}
 	// select utils:
-	
-	public static void elementSelectByValue(By locator, String value) {
-		Select select = new Select(getElement(locator));
-		select.selectByValue(value);
-	}
 
-	public static void elementSelect(By locator, Consumer<Select> consumer){
-		consumer.accept(new Select(getElement(locator)));
-		
+	public static void elementSelectWithWait(By locator, int timeout, Consumer<Select> consumer){
+		WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(timeout));
+		 wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		consumer.accept(new Select(getElement(locator)));	
 	}
 	
 	//browser utilities :

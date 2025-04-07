@@ -14,7 +14,7 @@ public class MakeAppointmentTemplate implements TemplateLoader{
 			add("facility", random("Tokyo CURA Healthcare Center", "Hongkong CURA Healthcare Center", "Seoul CURA Healthcare Center"));
 			add("isReadmission", random(true, false));
 			add("healthCareProgram", random("Medicare", "Medicaid", "None"));
-			add("dateOfVisit", random("10/04/2025", "25/04/2025"));
+			add("dateOfVisit", random("10/04/2025", "25/04/2025", "19/05/2025"));
 			add("comments", random(new Faker().lorem().paragraph()));
 		}});
 	}

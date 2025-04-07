@@ -30,6 +30,7 @@ public class BaseTest {
 	public void setup(){
 		Driver.initDriver(); 
 		headerComponent = new HeaderComponent();
+		footerComponent = new FooterComponent();
 	}
 
 	@AfterMethod

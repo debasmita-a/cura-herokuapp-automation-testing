@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 
 import fixtures.AppointmentData;
 import frameworkConstants.FrameworkConstants;
+import reports.ExtentLogger;
+
 import static utilities.ElementUtil.*;
 
 public class AppointmentPage {
@@ -19,20 +21,21 @@ public class AppointmentPage {
 	}
 
 	private AppointmentPage enterFacility(String facilityName){
-		elementSelect(FACILITY_DROPDOWN, e->e.selectByVisibleText(facilityName));
+		elementSelectWithWait(FACILITY_DROPDOWN, 5, e->e.selectByVisibleText(facilityName));
+		ExtentLogger.pass(facilityName);
 		return this;
 	}
 
 	private AppointmentPage isReadmissionCheck(boolean isAdmission){
 		if(isAdmission) {
-			doClick(IS_READMISSION_CHECKBOX, "Hospital Readmission");
+			doClickWithWait(IS_READMISSION_CHECKBOX, 5, "Hospital Readmission");
 		}
 		return this;
 	}
-//TODO : Make a resuable utility method
+//TODO : Make a resuable utility method 
 	private AppointmentPage selectHealthProgram(String program){
 		String xpath = "//input[@type='radio' and @value='" + program + "']";
-		doClick(By.xpath(xpath), "Healthcare Program");
+		doClickWithWait(By.xpath(xpath), 5, "Healthcare Program");
 		return this;
 	}
 
@@ -47,7 +50,7 @@ public class AppointmentPage {
 	}
 
 	private AppointmentPage clickBookAppointmentBtn(){
-		doClick(BOOK_APPOINTMENT_BTN, "Book Appointment button");
+		doClickWithWait(BOOK_APPOINTMENT_BTN, 5, "Book Appointment button");
 		return this;
 	}
 
