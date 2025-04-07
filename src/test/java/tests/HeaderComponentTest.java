@@ -12,12 +12,12 @@ public final class HeaderComponentTest extends BaseTest{
     
     @Test
     public void getHeaderTextTest(){
-        Assert.assertTrue(new HeaderComponent().getHeaderText());
+        Assert.assertTrue(headerComponent.getHeaderText());
     }
 
     @Test
     public void isMakeAppointmentBtnAvailableTest(){
-        Assert.assertTrue(new HeaderComponent().isMakeAppointmentBtnAvailable());
+        Assert.assertTrue(headerComponent.isMakeAppointmentBtnAvailable());
     }
 
 }

@@ -2,8 +2,9 @@ package pages;
 
 import org.openqa.selenium.By;
 
+import fixtures.AppointmentData;
 import frameworkConstants.FrameworkConstants;
-import utilities.ElementUtil;
+import static utilities.ElementUtil.*;
 
 public class AppointmentPage {
 	
@@ -15,39 +16,39 @@ public class AppointmentPage {
 	private static final By BOOK_APPOINTMENT_BTN = By.id("btn-book-appointment");
 
 	public boolean getAppointmentPageUrl(){
-		return ElementUtil.getCurrentUrlWithWait(FrameworkConstants.APPOINTMENT_PAGE_URL);
+		return getCurrentUrlWithWait(FrameworkConstants.APPOINTMENT_PAGE_URL);
 	}
 
 	private AppointmentPage enterFacility(String facilityName){
-		ElementUtil.elementSelect(FACILITY_DROPDOWN, e->e.selectByVisibleText(facilityName));
+		elementSelect(FACILITY_DROPDOWN, e->e.selectByVisibleText(facilityName));
 		return this;
 	}
 
 	private AppointmentPage isReadmissionCheck(boolean isAdmission){
 		if(isAdmission) {
-			ElementUtil.doClick(IS_READMISSION_CHECKBOX, "Hospital Readmission");
+			doClick(IS_READMISSION_CHECKBOX, "Hospital Readmission");
 		}
 		return this;
 	}
 
 	private AppointmentPage selectHealthProgram(String program){
-		String xpath = String.format(program, PROGRAM_RADIO_BUTTONS);
-		ElementUtil.doClick(By.xpath(xpath), "Healthcare Program");
+		String xpath = String.format(PROGRAM_RADIO_BUTTONS, program);
+		doClick(By.xpath(xpath), "Healthcare Program");
 		return this;
 	}
 
 	private AppointmentPage fillDate(String date){
-		ElementUtil.doSendKeys(DATE_TEXT, date, "Visit Date");
+		doSendKeys(DATE_TEXT, date, "Visit Date");
 		return this;
 	}
 
 	private AppointmentPage fillComments(String comments){
-		ElementUtil.doSendKeys(COMMENTS_TEXT, comments, "Comments");
+		doSendKeys(COMMENTS_TEXT, comments, "Comments");
 		return this;
 	}
 
 	private AppointmentPage clickBookAppointmentBtn(){
-		ElementUtil.doClick(BOOK_APPOINTMENT_BTN, "Book Appointment button");
+		doClick(BOOK_APPOINTMENT_BTN, "Book Appointment button");
 		return this;
 	}
 

@@ -17,13 +17,15 @@ public final class JSONFileReader {
 	private static Map<String, Object> CONFIG_MAP ;
 	
 	public Object[] getData() throws StreamReadException, DatabindException, IOException {
-		HashMap<String, Object> map = new ObjectMapper().readValue(new File("./src/test/resources/config/userConfig.json"), new TypeReference<HashMap<String, Object>>() {});
+		HashMap<String, Object> map = new ObjectMapper().readValue(new File("./src/test/resources/config/userConfig.json"),
+				new TypeReference<HashMap<String, Object>>() {});
 		return new Object[] {map};
 	}
 	
 	static {
 		try {
-			CONFIG_MAP = new ObjectMapper().readValue(new File("./src/test/resources/config/userConfig.json"),  new TypeReference<HashMap<String, Object>>() {});
+			CONFIG_MAP = new ObjectMapper().readValue(new File("./src/test/resources/config/userConfig.json"), 
+				new TypeReference<HashMap<String, Object>>() {});
 			
 		} catch (IOException e) {
 			e.printStackTrace();

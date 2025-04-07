@@ -32,7 +32,7 @@ public class ExtentReport {
 		if(Objects.nonNull(extent)) {
 			extent.flush();
 		}
-		Desktop.getDesktop().browse(new File("index.html").toURI());
+		Desktop.getDesktop().browse(new File("Spark.html").toURI());
 	}
 	
 	public static void createTest(String testcasename) {

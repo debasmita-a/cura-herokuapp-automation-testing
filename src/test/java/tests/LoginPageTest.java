@@ -17,14 +17,14 @@ public final class LoginPageTest extends BaseTest {
 
 	@Test
 	public void getLoginPageLeadTextTest() {
-		String actual = new HeaderComponent().navigateToLoginPage().getLoginPageLeadText();
+		String actual = headerComponent.navigateToLoginPage().getLoginPageLeadText();
 		Assert.assertTrue(actual.equals(FrameworkConstants.LOGIN_LEAD_TEXT));
 	}
 
 	@Test(dataProvider = "getData")
 	public void userLoginTest(String username, String password, boolean flag) {
-		LoginPage loginPage = new HeaderComponent().navigateToLoginPage();
-		AppointmentPage appointmentPage = loginPage.doLogin(username, password);
+		loginPage = headerComponent.navigateToLoginPage();
+		appointmentPage = loginPage.doLogin(username, password);
 		if (flag) {
 			Assert.assertTrue(appointmentPage.getAppointmentPageUrl());
 		} else {

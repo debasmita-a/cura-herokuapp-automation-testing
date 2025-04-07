@@ -2,8 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 
-import reports.ExtentLogger;
-import utilities.ElementUtil;
+import static utilities.ElementUtil.*;
 
 public class LoginPage {
 
@@ -14,26 +13,26 @@ public class LoginPage {
 	private static final By ERROR_MSG = By.xpath("//p[contains(@class,'text-danger')]");
 
 	public String getLoginPageLeadText(){
-		return ElementUtil.getElementText(LEAD_TEXT);
+		return getElementText(LEAD_TEXT);
 	}
 
 	private LoginPage enterUserName(String userName){
-		ElementUtil.doSendKeys(USERNAME_TEXT, userName, "Username");
+		doSendKeys(USERNAME_TEXT, userName, "Username");
 		return this;
 	}
 
 	private LoginPage enterPassword(String password){
-		ElementUtil.doSendKeys(PASSWORD_TEXT, password, "Password");
+		doSendKeys(PASSWORD_TEXT, password, "Password");
 		return this;
 	}
 
 	private AppointmentPage clickLoginBtn(){
-		ElementUtil.doClick(LOGIN_BTN, "Login button");
+		doClick(LOGIN_BTN, "Login button");
 		return new AppointmentPage();
 	}
 	
 	public String getErrorMessage() {
-		return ElementUtil.getElementTextWithWait(ERROR_MSG, 2);
+		return getElementTextWithWait(ERROR_MSG, 2);
 	}
 
 	public AppointmentPage doLogin(String userName, String password){

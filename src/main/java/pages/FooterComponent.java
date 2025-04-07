@@ -2,7 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 
-import utilities.ElementUtil;
+import static utilities.ElementUtil.*;
 
 public class FooterComponent {
 
@@ -13,23 +13,23 @@ public class FooterComponent {
     public static final By FOOTER_COPYRIGHT_TEXT = By.xpath("(//p)[2]");
 
     public String getFooterHeaderText(){     
-        return ElementUtil.getElementText(FOOTER_H4_TEXT);
+        return getElementText(FOOTER_H4_TEXT);
     }
 
     public String getFooterAddressText(){     
-        return ElementUtil.getElementText(FOOTER_ADDRESS_TEXT);
+        return getElementText(FOOTER_ADDRESS_TEXT);
     }
 
     public String getFooterContactText(){     
-        return ElementUtil.getElementText(FOOTER_CONTACT_TEXT);
+        return getElementText(FOOTER_CONTACT_TEXT);
     }
 
     public String getFooterMediaLinksText(){     
-        return ElementUtil.getElementText(FOOTER_MEDIA_LINKS);
+        return getElementText(FOOTER_MEDIA_LINKS);
     }
 
     public String getFooterCopyrightText(){     
-        return ElementUtil.getElementText(FOOTER_COPYRIGHT_TEXT);
+        return getElementText(FOOTER_COPYRIGHT_TEXT);
     }
     
 }

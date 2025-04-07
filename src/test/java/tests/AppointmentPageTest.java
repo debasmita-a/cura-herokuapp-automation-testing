@@ -1,26 +1,29 @@
 package tests;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import basetest.BaseTest;
-import pages.AppointmentData;
-import pages.AppointmentPage;
-import pages.HeaderComponent;
+import br.com.six2six.fixturefactory.Fixture;
+import fixtures.AppointmentData;
 
-public final class AppointmentPageTest extends BaseTest{
+public final class AppointmentPageTest extends BaseTest {
 
-    private AppointmentPageTest(){}
-    
-    @Test
-    public void fillAppointmentDetailsTest(){
-    	AppointmentPage appointmentPage = new HeaderComponent().navigateToLoginPage().doLogin("John Doe", "ThisIsNotAPassword");
-        AppointmentData appointmentData = new AppointmentData("Tokyo CURA Healthcare Center", 
-        false, 
-        "Medicare", 
-        "25/03/2025", 
-        "Test comments");
-        appointmentPage.fillAppointmentDetails(appointmentData);
-    }
+	private AppointmentPageTest() {
+	}
 
+	@DataProvider
+	public Object[][] getAppointmentData() {
+		AppointmentData data1 = Fixture.from(AppointmentData.class).gimme("valid");
+		AppointmentData data2 = Fixture.from(AppointmentData.class).gimme("valid");
+
+		return new Object[][] { { data1 }, { data2 } };
+	}
+
+	@Test(dataProvider="getAppointmentData")
+	public void fillAppointmentDetailsTest(AppointmentData data) {
+		appointmentPage = headerComponent.navigateToLoginPage().doLogin("John Doe", "ThisIsNotAPassword");
+		appointmentPage.fillAppointmentDetails(data);
+	}
 
 }

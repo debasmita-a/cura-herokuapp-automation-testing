@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 
 import frameworkConstants.FrameworkConstants;
-import utilities.ElementUtil;
+import static utilities.ElementUtil.*;
 
 public class HeaderComponent {
 
@@ -13,15 +13,15 @@ public class HeaderComponent {
 
     	
 	public boolean getHeaderText(){
-		return ElementUtil.getElementText(HEADER_TEXT).equals(FrameworkConstants.HEADER_TEXT);
+		return getElementText(HEADER_TEXT).equals(FrameworkConstants.HEADER_TEXT);
 	}
 
 	public boolean isMakeAppointmentBtnAvailable(){
-		return ElementUtil.isElementDisplayed(MAKE_APPOINTMENT_BTN);
+		return isElementDisplayed(MAKE_APPOINTMENT_BTN);
 	}
 
 	public LoginPage navigateToLoginPage(){
-		ElementUtil.doClick(MAKE_APPOINTMENT_BTN, "Make Appointment button");
+		doClick(MAKE_APPOINTMENT_BTN, "Make Appointment button");
 		return new LoginPage();
 	}
 	
