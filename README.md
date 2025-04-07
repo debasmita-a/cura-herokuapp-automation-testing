@@ -14,3 +14,15 @@
 ![alt text][Screenshot 02]
 
 [Screenshot 02]: https://github.com/debasmita-a/cura-herokuapp-automation-testing/blob/master/screenshots/lambdatest_02.jpeg "LambdaTest 02"
+
+![alt text][Screenshot 03]
+
+[Screenshot 03]: https://github.com/debasmita-a/cura-herokuapp-automation-testing/blob/master/screenshots/ExtentReportFinal.jpeg "Extent Report 01"
+
+![alt text][Screenshot 04]
+
+[Screenshot 04]: https://github.com/debasmita-a/cura-herokuapp-automation-testing/blob/master/screenshots/ExtentReportFinal_Stats.jpeg "Extent Report 02"
+
+![alt text][Screenshot 05]
+
+[Screenshot 05]: https://github.com/debasmita-a/cura-herokuapp-automation-testing/blob/master/screenshots/TestNGSummary.jpeg "TestNG Summary"
