@@ -10,7 +10,6 @@ public class AppointmentPage {
 	
 	private static final By FACILITY_DROPDOWN = By.id("combo_facility");
 	private static final By IS_READMISSION_CHECKBOX = By.id("chk_hospotal_readmission");
-	private static final String PROGRAM_RADIO_BUTTONS = "//input[@type='radio' and @value='%s']";
 	private static final By DATE_TEXT = By.id("txt_visit_date");
 	private static final By COMMENTS_TEXT = By.id("txt_comment");
 	private static final By BOOK_APPOINTMENT_BTN = By.id("btn-book-appointment");
@@ -30,9 +29,9 @@ public class AppointmentPage {
 		}
 		return this;
 	}
-
+//TODO : Make a resuable utility method
 	private AppointmentPage selectHealthProgram(String program){
-		String xpath = String.format(PROGRAM_RADIO_BUTTONS, program);
+		String xpath = "//input[@type='radio' and @value='" + program + "']";
 		doClick(By.xpath(xpath), "Healthcare Program");
 		return this;
 	}
